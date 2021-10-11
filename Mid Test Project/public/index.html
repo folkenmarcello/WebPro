@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="X-UA-Compatible" content="IE=EDGE">
+    <meta name="author" content="Student Management Apps">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+    <link rel="stylesheet" href="/stylesheet/style.css">
+    <title>Student's Form</title>
+  </head>
+  <body>
+    <header>
+      <p class="logo" >Student Management App</p>
+      <nav>
+        <a href="#"><li>Home</li></a>
+        <a href="/public/about.html"><li>About</li></a>
+      </nav>
+    </header>
+
+    <section class="container">
+     <div rowpt-3></div>
+      <div class="frms">
+        <h1>Student Form</h1>
+        <button type="button" name="button-show">Show Form</button>
+        <form class="form">
+          <div>
+            <label for="id">Student ID (NIM)</label>
+            <input type="text" name="id" placeholder="S012345" required>
+          </div>
+
+          <div>
+            <label for="fullname">Full Name</label>
+            <input type="text" name="fullname" placeholder="John Doe" required>
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="S12345@Student.unklab.ac.id" required>
+          </div>
+
+          <div class="gender">
+            <label for="gender">Gender</label>
+            <div>
+              <input class="male" type="radio" name="gender" value="male">
+              <input class="female" type="radio" name="gender" value="female">
+            </div>
+          </div>
+
+          <div>
+            <label for="faculty">Faculty</label>
+            <select id="faculties" name="faculty">
+              <option value="all">--Select Faculty--</option>
+              <option value="theology">Theology </option>
+              <option value="nursing">Nursing</option>
+              <option value="agriculture">Agriculture</option>
+              <option value="computer_science">Computer science</option>
+              <option value="economic">Economic and Business</option>
+              <option value="secretary">Secretary</option>
+              <option value="education">Education</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="programs">Program Study</label>
+            <select id="programs" name="programs">
+              <option class="all" value="all" id="options">--Choose Prodi--</option>
+            </select>
+          </div>
+
+          <button type="submit">Add Student</button>
+        </form>
+      </div>
+
+      <div class="filters">
+        <h1>filter students by</h1>
+        <form id="form2">
+          <label>Select Faculty</label>
+          <select class="fil-faculty" name="fil-faculty">
+            <option value="all">--Select Faculty--</option>
+            <option value="theology">Faculty Theology</option>
+            <option value="nursing">Faculty Nursing</option>
+            <option value="agriculture">Faculty Agriculture</option>
+            <option value="comp">Faculty Computer Science</option>
+            <option value="economic">Faculty Economic and Business</option>
+            <option value="sec">Faculty Secretary</option>
+            <option value="edu">Faculty Education</option>
+          </select>
+          <label>Program Study</label>
+          <select class="fil-programs" name="fil-programs">
+            <option value="all">--Select Prodi--</option>
+            <option value="bachelors">Theology Bachelors</option>
+            <option value="magister">Magister of Theology</option>
+            <option value="accounting">Accounting</option>
+            <option value="management">Management</option>
+            <option value="international">Accounting International Program</option>
+            <option value="nursing">Nurse</option>
+            <option value="proffession">Profession</option>
+            <option value="secretary">Secretary</option>
+            <option value="agriculture">Agriculture</option>
+            <option value="system">System Information</option>
+            <option value="technology">Information of Technology</option>
+            <option value="religious">Religious Education</option>
+            <option value="english">English Education</option>
+            <option value="economic">Economic Education</option>
+            <option value="formal">Non_formal Education</option>
+          </select>
+        </form>
+      </div>
+    </section>
+
+    <section class="students-datas">
+      <h1>student information list</h1>
+      <input type="text" name="searchbar" class="options" value="" placeholder="search student by name....">
+      <table>
+        <tbody>
+          <th>student id</th>
+          <th>fullname</th>
+          <th>gender</th>
+          <th>faculty</th>
+          <th>program of study</th>
+          <th>action</th>
+        </tbody>
+      </table>
+    </section>
+
+    <footer>
+      <div class="imgs-footer">
+      </div>
+      <span>&#169; 2021 Copyright: Web Programming - Folken Marcello. All Rights Reserved. </span>
+    </footer>
+  <script src="/src/app.js" charset="utf-8"></script>
+  </body>
+</html>
